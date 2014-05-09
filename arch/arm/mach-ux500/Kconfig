@@ -40,6 +40,27 @@ config MACH_U8500
 	help
 	  Include support for the mop500 development platform.
 
+config MACH_U8500_NYPON
+	bool "Sony Ericsson Nypon"
+	select WLAN_PMUEN_UX500
+	select CW1200_USE_GPIO_IRQ
+	help
+	  Support for Sony Ericsson Nypon devices.
+
+config MACH_U8500_PDP
+	bool "Sony Ericsson PDP"
+	select WLAN_PMUEN_UX500
+	select CW1200_USE_GPIO_IRQ
+	help
+	  Support for Sony Ericsson PDP devices.
+
+config MACH_U8500_PDP_R2
+	bool "Sony Ericsson PDP R2"
+	select WLAN_PMUEN_UX500
+	select CW1200_USE_GPIO_IRQ
+	help
+	  Support for Sony Ericsson PDP R2 devices.
+
 config MACH_HREFV60
 	bool "U85000 Development platform, HREFv60 version"
 	depends on UX500_SOC_DB8500
